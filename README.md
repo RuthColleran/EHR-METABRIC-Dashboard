@@ -19,8 +19,14 @@ clinical variables such as age at diagnosis, tumour information, treatment recei
 **3. Genomic Data Tab:** This tab has 2 sub-components: Patient-level and Cohort-level
 
 - For the individual patient (entered in the search bar), two interactive tables display the up-regulated and and down-regulated driver genes in the patient-level tab
+![PatientGenomic](genomic_patient.png)
+
 - In the genomic data cohort-level tab, the results from the functional enrichment analysis of the 35 driver genes using gprofiler2 are displayed as an interactive plot. This visualisations provides an insight into the significantly enriched biological processes and pathways that the identified driver genes are involved in. Additionally, the results from the Cox PH model for identifying the driver genes significantly associated with breast cancer survival are displayed in an interactive data-table. Using the Cox PH model, 14 out of the 35 genes were identified to be significantly associated with breast cancer survival (p-values < 0.05). The results from the functional enrichment analysis of these 14 genes are displayed in a separate interactive plot. This provides users with a better understanding of the genomic information at a cohort-level.
+
+![CohortGenomic](genomic_cohort.png)
 
 **4. 10-year Survival Prediction Tab:** This tab has 3 sub-components: Clinical Prediction, Genomic Prediction and Combined Prediction.
 
 - For each survival prediction RSF classifier model, users can select predictors to include using checkbox inputs. This enables clinicians to generate predictive models of ten-year breast cancer survival with their chosen predictors included. Upon selection of the predictors the user can press the “generate model” action button, which results in the construction of a RSF classifier model using the predictors selected by the user with an 80-20 training/test split of the dataset. The model information from the training set is displayed in an information box which includes the Out-of-bag (OOB) estimate of error rate and the confusion matrix. Furthermore, the variable importance for each predictor variable included in the model is displayed in an interactive table, to provide users with a better insight into the roles of each predictor variables in the resulting model. The ROC curve and AUROC for the model is displayed to allow clinicians to assess the performance of the resulting predictive model.
+
+![clinicalmodel](clinical_model.png)
