@@ -11,6 +11,7 @@ METABRIC Data can be accessed through cBioPortal online at https://www.cbioporta
 - To query a specific patient, a valid patient ID number can be entered into the search-bar displayed at the top of the sidebar menu. This displays the
 corresponding patient’s clinical data in the patient-level tab. This provides an overview of the recorded clinical data for the specified patient including
 clinical variables such as age at diagnosis, tumour information, treatment received and breast cancer classification, allowing clinicians to easily access and interpret this data to make appropriate and efficient clinical decisions.
+![ClinicalPatient](clinical_patient.png)
 - Clinical data for the entire cohort is displayed in the cohort-level tab. The clinical data is displayed in a tabbed box with 4 tabs: Cohort overview, Tumour Information, Treatment Information and Breast Cancer Classification. Visualisations were generated using the plotly package which enables users to interact with the data (zoom in, hover over etc). Interactive data tables were generated using the DT package which allows users to search for a specific term in the data table and alter the number of rows displayed. Using these visualisations of the entire cohort clinical data, users can easily access and interpret the clinical data by interacting with the corresponding plots and tables.
 
 ![ClinicalTab](clinical_tab.png)
