@@ -18,15 +18,15 @@ library(pROC) # for ROC curve
 
 ## import the data
 
-clinical<-read.csv('/home/ruth/METABRIC/data_clinical_patient.txt', header=T, skip = 4, sep='\t', na.strings=c(""," ","NA")) # clinical patient data 
+clinical<-read.csv('/home/ruth/METABRIC/data_clinical_patient.txt', header=T, skip = 4, sep='\t', na.strings=c(""," ","NA")) # path to clinical patient data 
 clinical <- na.omit(clinical) # remove missing values 
 
 
 
-combined_data <- read.csv("/home/ruth/METABRIC/combined_data.csv") # combined clinical and genomic data for RF model (oversampled)
+combined_data <- read.csv("/home/ruth/METABRIC/combined_data.csv") # path to combined clinical and genomic data for RF model (oversampled)
 combined_data <- combined_data[,-1] # remove first column
 
-gene_expression <-read.table('/home/ruth/METABRIC/data_mRNA_median_Zscores.txt', sep = '\t', check.names = FALSE, header = TRUE, row.names = NULL) # gene expression data 
+gene_expression <-read.table('/home/ruth/METABRIC/data_mRNA_median_Zscores.txt', sep = '\t', check.names = FALSE, header = TRUE, row.names = NULL) # path to gene expression data 
 
 # driver genes identified by OncodriveCLUSTL and OncodriveFML
 driver=c("MAP2K4","ARID1A", "PIK3CA", "TBX3", "MAP3K1", "CBFB", "TP53", "KMT2C",
