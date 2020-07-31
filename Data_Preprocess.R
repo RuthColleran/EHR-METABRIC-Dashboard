@@ -3,6 +3,7 @@
 # Load in Packages
 library(dplyr)
 library(tidyr)
+library(ROSE) # for oversampling
 
 #import data
 gene_expression <-read.table('/home/ruth/METABRIC/data_mRNA_median_Zscores.txt', sep = '\t', check.names = FALSE, header = TRUE, row.names = NULL)
